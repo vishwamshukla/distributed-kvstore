@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'your-dockerhub-username/distributed-kvstore:latest'
+        DOCKER_IMAGE = 'shuklavishwam/distributed-kvstore:latest'
         K8S_NAMESPACE = 'default'
     }
 
