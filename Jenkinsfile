@@ -6,6 +6,10 @@ pipeline {
         K8S_NAMESPACE = 'default'
     }
 
+    tools {
+        maven 'Maven'  // Use the name defined in Jenkins Maven configuration
+    }
+
     stages {
         stage('Checkout Code') {
             steps {
